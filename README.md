@@ -1,1 +1,1 @@
-a collection of random python code i've written
+a collection of random python, sql & java code i've written
