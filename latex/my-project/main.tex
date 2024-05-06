@@ -1,0 +1,121 @@
+% Document Class Declaration
+\documentclass{article}
+
+% Preamble
+\usepackage[utf8]{inputenc} % For UTF-8 encoded characters
+\usepackage{amsmath, amssymb, amsthm} % For maths
+\usepackage{hyperref} % For links
+\usepackage{graphicx, float} % For images
+\graphicspath{{images/}} % Telling graphicx where our images are
+
+% Document Customization ----------------
+
+% Geometry
+\usepackage[letterpaper, top=1in, bottom=1.0in, left=1.2in, right=1.2in, heightrounded]{geometry}
+
+% Line Height
+\renewcommand{\baselinestretch}{1.15} % Line Spacing
+
+% Parindent & Parskip 
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0.8em}
+
+%----------------------------------------
+
+\title{LaTeX for Myself}
+\author{Arnav Samal}
+\date{May 2024}
+
+% Document Environment
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{What is LaTeX?}
+
+LaTeX is a typesetting system commonly used for technical and scientific documents, particularly in academia and the publishing industry. It's based on the TeX typesetting language developed by Donald Knuth. LaTeX provides a high-level markup language that allows users to specify the structure and formatting of a document separately from its content.
+
+It's especially popular for documents that contain complex mathematical equations, formulas, and scientific notations due to its superior handling of such elements. LaTeX documents are typically compiled into a PDF format using various LaTeX compilers such as TeX Live, MiKTeX, or Overleaf, among others.
+
+Overall, LaTeX offers precise control over the layout and presentation of documents, making it a powerful tool for producing professional-looking papers, reports, theses, and books.
+\\ 
+\\ \href{https://www.overleaf.com/learn}{Check Overleaf Documentation for more}
+
+\subsection{Basic Structure of LateX Document}
+The basic structure of a LaTeX document typically consists of the following components:
+
+\begin{description}
+    \item[Document Class Declaration] This line specifies the type of document you are creating, such as an article, book, report, or presentation. For example:
+    \begin{verbatim}
+    \documentclass{article}
+    \end{verbatim}
+    
+    \item[Preamble] The preamble is the section between \verb|\documentclass{}| and
+    \verb|\begin{document}|. In the preamble, you can load packages, define custom commands, set document properties, and configure formatting options. For instance:
+    \begin{verbatim}
+    \usepackage{graphicx}
+    \usepackage{amsmath}
+    \title{My LaTeX Document}
+    \author{John Doe}
+    \date{\today}
+    \end{verbatim}
+    
+    \item[Document Environment] The main content of your document is enclosed within the \texttt{document} environment. This environment begins with \\
+    \verb|\begin{document}| and ends with \verb|\end{document}|. This is where you write the actual text of your document, including sections, paragraphs, equations, figures, tables, etc. For example:
+    \begin{verbatim}
+    \begin{document}
+    \maketitle
+    \section{Introduction}
+    This is the introduction to my document.
+    \section{Main Content}
+    Here is the main content of the document.
+    \end{document}
+    \end{verbatim}
+    
+    \item[Title, Author, Date] These details can be specified in the preamble using commands like \verb|\title{}|, \verb|\author{}|, and \verb|\date{}|. They are usually included in the document using \verb|\maketitle| command within the document environment.
+    
+    \item[Sections and Text] You can organize your document into logical sections using commands like \verb|\section{}|, \verb|\subsection{}|, and \verb|\subsubsection{}|. Text content is simply written out in the document environment.
+    
+    \item[Mathematics] LaTeX has robust support for mathematical typesetting. You can include inline math with \$...\$ or \verb|\( ... \)| and display math with \verb|\[ ... \]| or \verb|\begin{equation} ... \end{equation}|.
+
+    \item[Figures and Tables] Images are included using the \verb|\includegraphics{}| command  within a \texttt{figure} environment, and tables are created using the \texttt{table} environment along with commands like \verb|\begin{tabular}{...}|.
+
+    \item[References and Citations] You can manage references and citations using packages like \texttt{biblatex} or \texttt{natbib} along with a \texttt{.bib} file containing your references.
+\end{description}
+
+\section{Mathematics}
+
+\subsection{Writing Equations in \LaTeX}
+Examples:
+
+In 1902, Einstein created the equation: $E = mc^2$
+
+Newton came up with this one: $\sum F=ma$
+% For more fancy ones
+\begin{equation}
+    5+5=10
+\end{equation}
+
+\begin{equation}
+    \sum_{i=1}^{\infty} \frac{1}{n^s} = \prod_p \frac{1}{1 - p^{-s}}
+\end{equation}
+
+\subsection{Links for More}
+
+\href{https://detexify.kirelabs.org/classify.html}{Handwritten to Commands}
+
+\section{Images}
+
+\subsection{Including Images}
+% You have to create a folder
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{brad-knight-huWlb1NP67w-unsplash}
+    \caption{Chicago Skyline}
+    \label{fig:enter-label}
+\end{figure}
+
+\end{document}
+
