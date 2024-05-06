@@ -1,1 +1,1 @@
-a collection of random python, sql & java code i've written
+a collection of code or markup language i've written
