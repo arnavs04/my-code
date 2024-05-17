@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import pickle
 import streamlit as st
 
@@ -32,7 +33,59 @@ def main():
     # giving a title
     st.title('Diabetes Prediction Web App')
     
+    # heading
+    st.header("Machine Learning")
+
+    # subheading
+    st.subheader("Do you have diabetes?")
+
+    # giving details/input/info
+    st.info("Give info bro")
+
+    # warning message
+    st.warning("Give or I pop")
+
+    # st.write st.error st.markdown st.text
+    # st.caption st.latex
+
+    # st.image(filename.jpg or png or svg)
+
+    # Widgets
+    st.checkbox("Are you bro?") # st.button also
+
+    st.radio("Whats are your gender: ", ["Male", "Female", "Non-binar", "Prefer not to speak"])
+
+    st.selectbox("Whats are your gender: ", ["Male", "Female", "Non-binar", "Prefer not to speak"])
+
+    st.multiselect("Whats are your gender: ", ["Male", "Female", "Non-binar", "Prefer not to speak"])
+
+    st.select_slider("Whats are your gender: ", ["Male", "Female", "Non-binar", "Prefer not to speak"]) # st.slider also
+
+    ##### Inputsssss
+
+    # number input
+    st.number_input("ALmnaknckn") 
+    st.date_input()
+    st.time_input()
+
+    # Main Inputs
+    st.text_area("Enter prompt: ")
+
+    st.file_uploader("Give file bro: ")
+
+    st.color_picker("color")
+
+    st.image("Lol")
+
+    st.progress(80)
     
+    # Sidebar
+    st.sidebar.header("fkj")
+    # Same code for sidebar also
+
+    data = pd.DataFrame()
+    st.bar_chart(data)
+
     # getting the input data from the user
     Pregnancies = st.text_input('Number of Pregnancies')
     Glucose = st.text_input('Glucose Level')
@@ -43,7 +96,7 @@ def main():
     DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
     Age = st.text_input('Age of the Person')
     
-    
+
     # code for Prediction
     diagnosis = ''
     
