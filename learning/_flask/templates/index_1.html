@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Linear Algebra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Linear Algebra</h1>
+    <p>Linear algebra is a branch of mathematics that deals with vector spaces and linear mappings between these spaces. It's a fundamental tool used in various fields such as engineering, physics, computer science, and economics.</p>
+    <p>Key concepts in linear algebra include:</p>
+    <ol>
+        <li><strong>Vectors:</strong> Vectors are objects that represent quantities that have both magnitude and direction. They are often represented as arrays of numbers.</li>
+        <li><strong>Matrices:</strong> Matrices are rectangular arrays of numbers arranged in rows and columns. They are used to represent linear transformations, such as rotations, scalings, and reflections.</li>
+        <li><strong>Vector Spaces:</strong> A vector space is a set of vectors that is closed under addition and scalar multiplication. It satisfies certain properties such as associativity, commutativity, distributivity, and the existence of an identity element.</li>
+        <li><strong>Linear Independence and Span:</strong> A set of vectors is linearly independent if no vector in the set can be expressed as a linear combination of the others. The span of a set of vectors is the set of all possible linear combinations of those vectors.</li>
+        <li><strong>Linear Transformations:</strong> A linear transformation is a function that maps vectors from one vector space to another while preserving addition and scalar multiplication.</li>
+        <li><strong>Eigenvalues and Eigenvectors:</strong> Eigenvalues are scalars that represent how a linear transformation stretches or compresses space along a particular direction. Eigenvectors are the corresponding vectors that are stretched or compressed by the transformation.</li>
+        <li><strong>Determinants:</strong> The determinant of a square matrix is a scalar value that can be computed from its elements. It represents how the matrix scales volume when it is used to transform space.</li>
+    </ol>
+    <p>These are just a few fundamental concepts in linear algebra, but they provide a solid foundation for understanding more advanced topics such as matrix factorization, least squares regression, and singular value decomposition.</p>
+
+    <h2>HTML Forms</h2>
+
+    <form action = '/submit', method = "post">
+        <label for="Science">Science:</label><br>
+        <input type="text" id="science" name="science" value="0"><br>
+        <label for="Maths">Maths:</label><br>
+        <input type="text" id="maths" name="maths" value="0"><br><br>
+        <label for="C ">C:</label><br>
+        <input type="text" id="c" name="c" value="0"><br><br>
+        <label for="datascience">Data Science:</label><br>
+        <input type="text" id="datascience" name="datascience" value="0"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+</body>
+</html>
